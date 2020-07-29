@@ -13,6 +13,13 @@
     <canvas id="canvas" width="300" height="400"></canvas>  <!-- ★絵を描くcanvas要素 -->
 
     <script>
+      if('serviceWorker' in navigator){
+        navigator.serviceWorker.register('serviceworker.js').then(function(){
+          console.log("Service Worker Registered");
+        });
+      }
+    </script>
+    <script>
       var alpha = 0, beta = 0, gamma = 0;             // ジャイロの値を入れる変数を3個用意
 var canvas = document.getElementById("canvas"); // ★canvas要素を取得 
 var context = canvas.getContext("2d");          // ★絵を描く部品を取得
@@ -60,13 +67,6 @@ function drawOrientation() {
   context.stroke();                           // 線を描画
 }
     </script>
-    <script>
-      if('serviceWorker' in navigator){
-        navigator.serviceWorker.register('serviceworker.js').then(function(){
-          console.log("Service Worker Registered");
-        });
-      }
-    </script> 
   </body>
 </html>
 
