@@ -1,0 +1,18 @@
+{
+  "name"              : "PWA Gyrosensor",
+  "short_name"        : "Gyrosensor",
+  "description"       : "ジャイロセンサー",
+  "start_url"         : "index.html",
+  "display"           : "standalone",
+  "orientation"       : "portrait",
+  "background_color"  : "#000000",
+  "theme_color"       : "#ffffff",
+  "icons": [
+    {
+      "src"           : "/img/manifest_icon-192.png",
+      "sizes"         : "192x192",
+      "type"          : "image/png"
+    }
+  ]
+}
+
